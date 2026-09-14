@@ -120,7 +120,7 @@ for i in range(1, 4):
     heti_cel = suly + heti_novekedes
     print(f"Az {i}. héten {heti_cel} kg-t kell elérned.")
 
-# 18. feladat - sajnos nem java program
+# 18. feladat - de nem JAVA-ban
 akt_ev = int(input("Mi az aktuális év? "))
 szul_ev = int(input("Melyik évben született? "))
 eletkor18f = akt_ev-szul_ev
