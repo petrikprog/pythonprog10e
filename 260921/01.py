@@ -1,0 +1,2 @@
+nev = "Katalin"
+megszolitas = "Mrs"
