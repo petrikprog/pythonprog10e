@@ -245,5 +245,33 @@ print(rand.randint(8000,150000))
 print("35f")
 lab = float(input("Láb: "))
 huvelyk = float(input("Hüvelyk: "))
+ossz = lab * 30.48 + huvelyk * 2.54
+print(f"{ossz} cm")
 
-print(f"Láb {lab * 30.48} cm, hüvelyk {huvelyk * 2.54} cm")
+# 36. feladat
+print("36f")
+gallon = float(input("Gallon: "))
+dm3 = gallon * 4.5431
+suruseg = 0.998
+tomeg = dm3*suruseg
+font = tomeg/100 * 45.36
+print(f"{font} font tömegű")
+
+# 37. feladat
+print("37f")
+datum = input("Dátum (év.hónap.nap): ")
+ora = int(input("Óra: "))
+nap37f = int(datum.split('.')[2])
+osszOra = nap37f * 24 + ora
+print(f"A hónap {osszOra}. órájában vagyunk")
+
+# 38. feladat
+print("38f")
+degrees = int(input("Szögmérték: "))
+rad = math.radians(degrees)
+print(f"{rad} radián")
+
+# 39. feladat
+print("39f")
+szamAbs = abs(float(input("Valós szám: ")))
+print(f"Az abszolút érték {szamAbs}")
