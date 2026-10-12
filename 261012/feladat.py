@@ -1,3 +1,4 @@
+import random
 """
 # 1. feladat
 print("1f")
@@ -99,11 +100,142 @@ print(resz3hastag)
 print(f"#{resz3}#")
 print(resz3hastag)
 # 1. feladat
+"""
 print("1f")
 while True:
-    osszegHatar = abs(int(input("Összeghatár 1000 Ft alatt, osztható 5-tel: ")))
-    if osszegHatar < 1000 and osszegHatar % 5 == 0:
+    osszeg = abs(int(input("Összeghatár 1000 Ft alatt, osztható 5-tel: ")))
+    if osszeg < 1000 and osszeg % 5 == 0:
         break
     print("ERROR. Helytelen érték.")
+
+cimletek = {200: 0, 100: 0, 50: 0, 20: 0, 10: 0, 5: 0}
+while osszeg != 0:
+    if osszeg >= 200:
+        cimletek[200] += osszeg // 200
+        osszeg %= 200
+    if osszeg >= 100:
+        cimletek[100] += osszeg // 100
+        osszeg %= 100
+    if osszeg >= 50:
+        cimletek[50] += osszeg // 50
+        osszeg %= 50
+    if osszeg >= 20:
+        cimletek[20] += osszeg // 20
+        osszeg %= 20
+    if osszeg >= 10:
+        cimletek[10] += osszeg // 10
+        osszeg %= 10
+    if osszeg >= 5:
+        cimletek[5] += osszeg // 5
+        osszeg %= 5
+
+print(f"{cimletek[200]} db 200as, {cimletek[100]} db 100as, {cimletek[50]} db 50es, {cimletek[20]} db 20as, {cimletek[10]} db 10es, {cimletek[5]} db 5ös")    
+
+
+# 2. feladat
+print("2f")
+szam = int(input("Visszaszámlálás: "))
+for i in range(szam, -1, -1):
+    print(i)
+print("Kilövés")
+
+
+# 3. feladat
+print("3f")
+termekekSzama = 0
+vegosszeg = 0
+while True:
+    ar = abs(int(input("Termék ára: ")))
+    if ar == 0:
+        break
+    vegosszeg += ar
+    termekekSzama += 1
+
+print(f"{termekekSzama} terméket vásároltunk, {vegosszeg} Ft-ért")
+
+
+# 4. feladat
+print("4f")
+bakteriumokSzama = 100
+kivantBakterium = 50000
+ora = 0
+while bakteriumokSzama < kivantBakterium:
+    bakteriumokSzama *=2
+    ora += 1
+print(f"{ora} óra alatt.")
+
+
+
+# 5. feladat
+print("5f")
+szamsor = 1234
+guessed = False
+for i in range(3):
+    tipp = int(input("Tippelj: "))
+    if tipp == szamsor:
+        guessed = True
+        break
+if guessed:
+    print("Belépés engedélyezve!")
+else:
+    print("Letiltva!")
+
+
+
+# 6. feladat
+print("6f")
+dobasokSzama = 0
+while True:
+    dobas = random.randint(1, 6)
+    print(dobas)
+    dobasokSzama += 1
+    if dobas == 6:
+        break
+print(f"{dobasokSzama} dobásból sikerült 6ost dobnunk.")
+
+
+# 7. feladat
+print("7f")
+while True:
+    erdemjegy = int(input("Érdemjegy: "))
+    if erdemjegy >= 1 and erdemjegy <= 5:
+        print("Köszönöm, a jegyedet rögzítettem")
+        break
+    print("ERROR Hibás érték")
+
+# 8. feladat
+print("8f")
+malacpersely = 0
+nap = 0
+while malacpersely <= 1000:
+    felretettPenz = int(input("A mai nap félretett pénz: "))
+    malacpersely += felretettPenz
+    nap += 1
+print(f"{nap} alatt érted el az 1000ft")
+
+
+
+# 9. feladat
+print("9f")
+szam9f = 0
+while szam9f < 1:
+    szam9f = int(input("Egynél nagyobb egész szám: "))
+
+oszto = 2
+while szam9f % oszto != 0:
+    oszto += 1
+
+print(f"A legkisebb osztó: {oszto}")
+"""
+
+# 10. feladat
+print("10f")
+while True:
+    print("[1] Új Játék, [2] Segítség, [3] Kilépés")
+    gomb = int(input("Gomb: "))
+    if gomb == 1:
+        print("Új Játék")
+    else:
+        print("asd")
 
 
