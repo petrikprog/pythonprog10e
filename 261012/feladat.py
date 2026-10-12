@@ -1,5 +1,5 @@
 import random
-"""
+
 # 1. feladat
 print("1f")
 toke = abs(int(input("Kezdőtőke: ")))
@@ -90,7 +90,7 @@ while True:
         print(f"Köszönöm, az életkorod: {eletkor}")
         break
     print("ERROR. Helytelen életkori érték.")
-"""
+
 #############
 # III. rész #
 #############
@@ -100,7 +100,6 @@ print(resz3hastag)
 print(f"#{resz3}#")
 print(resz3hastag)
 # 1. feladat
-"""
 print("1f")
 while True:
     osszeg = abs(int(input("Összeghatár 1000 Ft alatt, osztható 5-tel: ")))
@@ -226,7 +225,7 @@ while szam9f % oszto != 0:
     oszto += 1
 
 print(f"A legkisebb osztó: {oszto}")
-"""
+
 
 # 10. feladat
 print("10f")
@@ -234,8 +233,15 @@ while True:
     print("[1] Új Játék, [2] Segítség, [3] Kilépés")
     gomb = int(input("Gomb: "))
     if gomb == 1:
-        print("Új Játék")
+        print("Új Játék gomb megnyomva")
+    elif gomb == 2:
+        print("Segítség gomb megnyomva")
+    elif gomb == 3:
+        print("Kilépés folyamatban")
+        break
     else:
-        print("asd")
+        print("Nem létező gomb")
+print("Kilépve")
+
 
 
