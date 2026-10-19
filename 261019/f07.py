@@ -19,6 +19,7 @@ while True:
         break
     elif pont == 21:
         print("Nyertel! ", end="")
+        break
 if felad:
     print(f"Megalltal {pont} pontnal. {21-pont} ponttal maradtal el a 21-tol. ", end="")
 print(f"Dobasok szama: {dobasokSzama}")
