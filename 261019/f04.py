@@ -15,12 +15,12 @@ for i in range(dobasokSzama):
         osszPontszam += 10
         print(" -> 10 pont")
     elif dobas1 == dobas2:
-        if legjobbDobas < 10:
+        if legjobbDobas < 5:
             legjobbDobas = 5
         osszPontszam += 5
         print(f" -> 5 pont")
     else:
-        if legjobbDobas < 5:
+        if legjobbDobas < 1:
             legjobbDobas = 1
         osszPontszam += 1
         print(f" -> 1 pont")
