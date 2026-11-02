@@ -20,6 +20,4 @@ for i in range(max(lista1Len, lista2Len)):
         osszegLista.append(lista1[i])
     else:
         osszegLista.append(lista1[i]+lista2[i])
-print(lista1)
-print(lista2)
-print(osszegLista)
+
