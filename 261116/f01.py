@@ -8,7 +8,7 @@ def hatizsak_feltoltes():
 def kiir():
     print("Hátizsák tartalma:")
     for targy in hatizsak:
-        print(targy)
+        print(f"\t{targy}")
     print(f"Jelenleg {len(hatizsak)} tárgy van a táskában.")
 
 def kereses():
