@@ -4,7 +4,7 @@ homersekletek = []
 
 def feltoltes(db):
     for i in range(db):
-        homersekletek.append(random.randint(0,100)*10)
+        homersekletek.append(round(random.uniform(0,1000),2))
 
 def uj_homerseklet_rogzitese():
     ujHomerseklet = float(input("Új hőmérséklet: "))
